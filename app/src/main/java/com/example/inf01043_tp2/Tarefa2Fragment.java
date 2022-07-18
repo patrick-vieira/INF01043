@@ -1,5 +1,6 @@
 package com.example.inf01043_tp2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +11,6 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.inf01043_tp2.databinding.FragmentTarefa1Binding;
 import com.example.inf01043_tp2.databinding.FragmentTarefa2Binding;
 
 public class Tarefa2Fragment extends Fragment {
@@ -40,6 +40,18 @@ public class Tarefa2Fragment extends Fragment {
             public void onClick(View view) {
                 NavHostFragment.findNavController(Tarefa2Fragment.this)
                         .navigate(R.id.action_Tarefa2Fragment_to_FirstFragment);
+            }
+        });
+
+        binding.buttonSend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent i =new Intent(binding.getRoot().getContext().getApplicationContext(), MainActivityTarefa2.class);
+
+                String message = binding.textInputLayout.getEditText().getText().toString();
+                i.putExtra("message", message);
+                startActivity(i);
             }
         });
 

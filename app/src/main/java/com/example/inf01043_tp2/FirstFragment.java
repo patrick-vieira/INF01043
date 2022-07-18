@@ -1,5 +1,6 @@
 package com.example.inf01043_tp2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -45,6 +46,7 @@ public class FirstFragment extends Fragment {
             }
         });
     }
+
 
     @Override
     public void onDestroyView() {
