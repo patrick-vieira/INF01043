@@ -4,16 +4,18 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.inf01043_tp2.databinding.FragmentSecondBinding;
+import com.example.inf01043_tp2.databinding.FragmentTarefa1Binding;
+import com.example.inf01043_tp2.databinding.FragmentTarefa2Binding;
 
-public class SecondFragment extends Fragment {
+public class Tarefa2Fragment extends Fragment {
 
-    private FragmentSecondBinding binding;
+    private FragmentTarefa2Binding binding;
 
     @Override
     public View onCreateView(
@@ -21,7 +23,11 @@ public class SecondFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentSecondBinding.inflate(inflater, container, false);
+        binding = FragmentTarefa2Binding.inflate(inflater, container, false);
+
+        String toast = "Tarefa 1 Somar dois numeros";
+        Toast.makeText(this.getContext(), toast, Toast.LENGTH_SHORT).show();
+
         return binding.getRoot();
 
     }
@@ -32,10 +38,12 @@ public class SecondFragment extends Fragment {
         binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(SecondFragment.this)
-                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
+                NavHostFragment.findNavController(Tarefa2Fragment.this)
+                        .navigate(R.id.action_Tarefa2Fragment_to_FirstFragment);
             }
         });
+
+
     }
 
     @Override

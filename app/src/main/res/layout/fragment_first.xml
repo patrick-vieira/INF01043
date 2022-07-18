@@ -10,19 +10,85 @@
         android:id="@+id/textview_first"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_first_fragment"
-        app:layout_constraintBottom_toTopOf="@id/button_first"
+        android:layout_marginTop="100dp"
+        android:text="@string/my_name"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_first"
+        android:id="@+id/button_tarefa_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/next"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="154dp"
+        android:text="Tarefa 1"
+        app:layout_constraintBottom_toTopOf="@+id/button_tarefa_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_first" />
+
+    <Button
+        android:id="@+id/button_tarefa_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginEnd="153dp"
+        android:text="Tarefa 2"
+        app:layout_constraintBottom_toTopOf="@+id/button_tarefa_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_tarefa_1" />
+
+    <Button
+        android:id="@+id/button_tarefa_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginEnd="153dp"
+        android:text="Tarefa 3"
+        app:layout_constraintBottom_toTopOf="@+id/button_tarefa_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_tarefa_2" />
+
+    <Button
+        android:id="@+id/button_tarefa_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginEnd="153dp"
+        android:text="Tarefa 4"
+        app:layout_constraintBottom_toTopOf="@+id/button_tarefa_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_tarefa_3" />
+
+    <Button
+        android:id="@+id/button_tarefa_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginEnd="153dp"
+        android:text="Tarefa 5"
+        app:layout_constraintBottom_toTopOf="@+id/button_tarefa_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_tarefa_4" />
+
+    <Button
+        android:id="@+id/button_tarefa_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="156dp"
+        android:text="Tarefa 6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_first" />
+        app:layout_constraintTop_toBottomOf="@+id/button_tarefa_5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
